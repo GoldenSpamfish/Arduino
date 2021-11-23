@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "steppertest": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled",
+    "C_Cpp.intelliSenseEngine":"Tag Parser"
+}
