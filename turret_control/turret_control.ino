@@ -91,19 +91,19 @@ void loop()
       Rstep();
     }
 
-  if ((analogRead(X_pin) > 540))
+  if ((analogRead(X_pin) > 540) && serv < 110)
   {
     serv += servspeed;
   }
 
-  else if ((analogRead(X_pin) < 460))
+  else if ((analogRead(X_pin) < 460) && serv > 0.5)
   {
     serv = serv - servspeed;
   }
 
   servX.write(serv);
 
-  //text outputs
+  //text output
   Serial.print("JoyX:");             Serial.print(analogRead(X_pin));
   Serial.print("         Serv:");    Serial.print(serv);
   Serial.print("         JoyY:");    Serial.print(analogRead(Y_pin));
